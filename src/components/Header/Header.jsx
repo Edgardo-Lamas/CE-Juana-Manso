@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Proyectos', path: '/proyectos' },
   { name: 'Impacto', path: '/impacto' },
   { name: 'Alianzas', path: '/alianzas' },
+  { name: 'Actividad', path: '/actividad-institucional' },
   { name: 'Contacto', path: '/contacto' },
 ];
 
