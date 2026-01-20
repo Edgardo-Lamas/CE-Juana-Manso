@@ -10,6 +10,7 @@ import Impacto from './pages/Impacto';
 import Alianzas from './pages/Alianzas';
 import Contacto from './pages/Contacto';
 import FichaTecnica from './pages/FichaTecnica';
+import ActividadInstitucional from './pages/ActividadInstitucional';
 import './index.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/impacto" element={<Impacto />} />
           <Route path="/alianzas" element={<Alianzas />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/actividad-institucional" element={<ActividadInstitucional />} />
         </Routes>
         <Footer />
       </div>

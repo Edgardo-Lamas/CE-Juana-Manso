@@ -44,7 +44,7 @@ function Footer() {
                             <h4 className="footer__title">Documentación</h4>
                             <ul className="footer__links">
                                 <li><Link to="/proyectos">Portfolio de Proyectos</Link></li>
-                                <li><Link to="/proyectos">Informes Técnicos</Link></li>
+                                <li><Link to="/actividad-institucional">Actividad Institucional</Link></li>
                                 <li><Link to="/alianzas">Alianzas y Convenios</Link></li>
                                 <li><Link to="/contacto">Contacto Institucional</Link></li>
                             </ul>

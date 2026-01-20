@@ -1,0 +1,249 @@
+/* ==========================================================================
+   ACTIVIDAD INSTITUCIONAL
+   ========================================================================== */
+
+/* Introducción */
+.actividad__intro {
+    padding: var(--spacing-10) 0;
+    background-color: var(--color-white);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.actividad__intro-content {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: flex-start;
+}
+
+.actividad__intro-content svg {
+    color: var(--color-primary-500);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.actividad__intro-content p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
+
+/* Lista de actividades */
+.actividad__lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+/* Registro individual */
+.actividad__registro {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-left: 4px solid var(--color-primary-500);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.actividad__registro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-4);
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+}
+
+.actividad__registro-tipo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-1) var(--spacing-3);
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-sm);
+}
+
+.actividad__registro-tipo svg {
+    color: var(--color-primary-600);
+}
+
+.actividad__registro-tipo span {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-700);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.actividad__registro-fecha {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.actividad__registro-titulo {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-3);
+    line-height: var(--line-height-snug);
+}
+
+.actividad__registro-desc {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-5);
+    padding-bottom: var(--spacing-5);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+/* Participantes */
+.actividad__registro-participantes {
+    margin-bottom: var(--spacing-4);
+}
+
+.actividad__registro-participantes h4 {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-3);
+}
+
+.actividad__registro-participantes ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.actividad__registro-participantes li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    flex-wrap: wrap;
+}
+
+.actividad__participante-nombre {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-900);
+}
+
+.actividad__participante-cargo {
+    color: var(--color-gray-600);
+}
+
+.actividad__participante-cargo::before {
+    content: '—';
+    margin-right: var(--spacing-2);
+    color: var(--color-gray-400);
+}
+
+.actividad__participante-org {
+    color: var(--color-gray-500);
+    font-size: var(--font-size-xs);
+}
+
+.actividad__participante-org::before {
+    content: '|';
+    margin-right: var(--spacing-2);
+    color: var(--color-gray-300);
+}
+
+/* Marco institucional */
+.actividad__registro-marco {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-md);
+    font-size: var(--font-size-sm);
+}
+
+.actividad__registro-marco-label {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+}
+
+.actividad__registro-marco-value {
+    color: var(--color-gray-600);
+}
+
+/* Galería de imágenes */
+.actividad__registro-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-3);
+    margin-top: var(--spacing-5);
+}
+
+.actividad__registro-galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+    border: var(--border-width) solid var(--color-gray-200);
+}
+
+/* Nota institucional */
+.actividad__nota {
+    background-color: var(--color-gray-50);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-left: 4px solid var(--color-primary-700);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-md);
+}
+
+.actividad__nota h4 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-3);
+}
+
+.actividad__nota p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .actividad__intro-content {
+        flex-direction: column;
+    }
+
+    .actividad__registro-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actividad__registro-participantes li {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .actividad__participante-cargo::before,
+    .actividad__participante-org::before {
+        display: none;
+    }
+
+    .actividad__participante-org {
+        margin-top: var(--spacing-1);
+    }
+
+    .actividad__registro-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .actividad__registro-marco {
+        flex-direction: column;
+        gap: var(--spacing-1);
+    }
+}
