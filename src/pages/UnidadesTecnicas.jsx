@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
     Wrench,
     Hammer,
@@ -5,7 +6,9 @@ import {
     Printer,
     Cable,
     Ruler,
-    CheckCircle2
+    CheckCircle2,
+    ArrowRight,
+    Thermometer
 } from 'lucide-react';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
@@ -13,6 +16,33 @@ import './UnidadesTecnicas.css';
 
 // Unidades de ejecución técnica
 const unidades = [
+    {
+        id: 'termomecanica',
+        icon: Thermometer,
+        nombre: 'Mantenimiento Termomecánico y Sistemas de Calefacción',
+        clasificacion: 'Unidad Productiva Tipo A',
+        descripcion: 'Mantenimiento preventivo y correctivo de sistemas de calefacción, instalaciones termomecánicas y equipos de climatización en edificaciones institucionales.',
+        capacidades: [
+            'Diagnóstico y reparación de calderas',
+            'Mantenimiento preventivo de sistemas térmicos',
+            'Instalación de sistemas de climatización',
+            'Verificación de instalaciones de gas',
+            'Optimización de consumo energético'
+        ],
+        equipamiento: [
+            'Analizadores de combustión',
+            'Manómetros y termómetros de precisión',
+            'Detectores de fugas de gas',
+            'Equipo de soldadura autógena',
+            'Herramientas específicas'
+        ],
+        certificaciones: [
+            'Técnico en calefacción',
+            'Gasista matriculado',
+            'Mantenimiento de calderas'
+        ],
+        fichaUrl: '/unidades-tecnicas/termomecanica'
+    },
     {
         id: 'carpinteria',
         icon: Wrench,
@@ -37,7 +67,8 @@ const unidades = [
             'Carpintero de obra',
             'Operador de maquinaria de carpintería',
             'Lustre y acabado de maderas'
-        ]
+        ],
+        fichaUrl: null // Próximamente
     },
     {
         id: 'construccion',
@@ -272,6 +303,20 @@ function UnidadesTecnicas() {
                                             ))}
                                         </ul>
                                     </div>
+                                </div>
+
+                                {/* Botón de ficha técnica */}
+                                <div className="unidades__item-footer">
+                                    {unidad.fichaUrl ? (
+                                        <Link to={unidad.fichaUrl} className="unidades__item-link">
+                                            Ver ficha técnica completa
+                                            <ArrowRight size={16} />
+                                        </Link>
+                                    ) : (
+                                        <span className="unidades__item-link unidades__item-link--disabled">
+                                            Ficha técnica próximamente
+                                        </span>
+                                    )}
                                 </div>
                             </article>
                         ))}

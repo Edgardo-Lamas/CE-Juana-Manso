@@ -9,6 +9,7 @@ import Proyectos from './pages/Proyectos';
 import Impacto from './pages/Impacto';
 import Alianzas from './pages/Alianzas';
 import Contacto from './pages/Contacto';
+import FichaTecnica from './pages/FichaTecnica';
 import './index.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quienes-somos" element={<QuienesSomos />} />
           <Route path="/unidades-tecnicas" element={<UnidadesTecnicas />} />
+          <Route path="/unidades-tecnicas/termomecanica" element={<FichaTecnica />} />
           <Route path="/area-academica" element={<AreaAcademica />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/impacto" element={<Impacto />} />

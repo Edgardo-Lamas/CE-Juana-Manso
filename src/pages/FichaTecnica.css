@@ -1,0 +1,677 @@
+/* ==========================================================================
+   FICHA TÉCNICA INSTITUCIONAL
+   ========================================================================== */
+
+/* Header */
+.ficha-tecnica__header {
+    padding: var(--spacing-12) 0 var(--spacing-16);
+    background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-800) 100%);
+}
+
+.ficha-tecnica__back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-400);
+    margin-bottom: var(--spacing-8);
+    transition: color var(--transition-fast);
+}
+
+.ficha-tecnica__back:hover {
+    color: var(--color-white);
+}
+
+.ficha-tecnica__titulo {
+    max-width: 900px;
+}
+
+.ficha-tecnica__badges {
+    display: flex;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__badge {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-3);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-sm);
+}
+
+.ficha-tecnica__badge--codigo {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-gray-300);
+    font-family: monospace;
+}
+
+.ficha-tecnica__badge--estado {
+    background-color: rgba(5, 150, 105, 0.2);
+    color: #6ee7b7;
+}
+
+.ficha-tecnica__titulo h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__meta {
+    display: flex;
+    gap: var(--spacing-6);
+    flex-wrap: wrap;
+}
+
+.ficha-tecnica__meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-400);
+}
+
+/* Tipo de Capacidad */
+.ficha-tecnica__tipo {
+    padding: var(--spacing-8) 0;
+    background-color: var(--color-white);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.ficha-tecnica__tipo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.ficha-tecnica__tipo-item {
+    text-align: center;
+    padding: var(--spacing-4);
+}
+
+.ficha-tecnica__label {
+    display: block;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-2);
+}
+
+.ficha-tecnica__value {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-900);
+}
+
+/* Objetivo Operativo */
+.ficha-tecnica__objetivo {
+    max-width: 900px;
+}
+
+.ficha-tecnica__objetivo-desc {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-8);
+}
+
+.ficha-tecnica__objetivo-lista h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__objetivo-lista ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.ficha-tecnica__objetivo-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-3);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+}
+
+.ficha-tecnica__objetivo-lista li svg {
+    color: var(--color-success);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Trayecto Formativo */
+.ficha-tecnica__trayecto-info {
+    margin-bottom: var(--spacing-8);
+}
+
+.ficha-tecnica__trayecto-meta {
+    display: flex;
+    gap: var(--spacing-8);
+    flex-wrap: wrap;
+}
+
+.ficha-tecnica__trayecto-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+    font-weight: var(--font-weight-medium);
+}
+
+.ficha-tecnica__modulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+}
+
+.ficha-tecnica__modulo {
+    background-color: var(--color-gray-50);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.ficha-tecnica__modulo-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-4);
+    padding-bottom: var(--spacing-4);
+    border-bottom: var(--border-width) solid var(--color-gray-200);
+}
+
+.ficha-tecnica__modulo-num {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-600);
+    background-color: var(--color-primary-50);
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius-sm);
+}
+
+.ficha-tecnica__modulo-header h4 {
+    flex: 1;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.ficha-tecnica__modulo-horas {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+}
+
+.ficha-tecnica__modulo-contenidos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.ficha-tecnica__modulo-contenidos li {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    padding-left: var(--spacing-4);
+    position: relative;
+}
+
+.ficha-tecnica__modulo-contenidos li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gray-400);
+}
+
+/* Competencias */
+.ficha-tecnica__competencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+}
+
+.ficha-tecnica__competencia {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+}
+
+.ficha-tecnica__competencia svg {
+    color: var(--color-primary-500);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ficha-tecnica__competencia span {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Alcance */
+.ficha-tecnica__alcance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+}
+
+.ficha-tecnica__alcance-item {
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.ficha-tecnica__alcance-item h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.ficha-tecnica__alcance-item h4 svg {
+    color: var(--color-primary-500);
+}
+
+.ficha-tecnica__alcance-item>p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__alcance-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+}
+
+.ficha-tecnica__tag {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-600);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Protocolos */
+.ficha-tecnica__protocolos {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.ficha-tecnica__protocolos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ficha-tecnica__protocolos th,
+.ficha-tecnica__protocolos td {
+    padding: var(--spacing-4) var(--spacing-6);
+    text-align: left;
+}
+
+.ficha-tecnica__protocolos th {
+    background-color: var(--color-gray-50);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-700);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    border-bottom: var(--border-width) solid var(--color-gray-200);
+}
+
+.ficha-tecnica__protocolos td {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.ficha-tecnica__protocolos tr:last-child td {
+    border-bottom: none;
+}
+
+.ficha-tecnica__protocolo-codigo {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    font-family: monospace;
+}
+
+/* Recursos */
+.ficha-tecnica__recursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+}
+
+.ficha-tecnica__recurso {
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.ficha-tecnica__recurso h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__recurso h4 svg {
+    color: var(--color-primary-500);
+}
+
+.ficha-tecnica__recurso ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.ficha-tecnica__recurso li {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    padding-left: var(--spacing-4);
+    position: relative;
+}
+
+.ficha-tecnica__recurso li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gray-400);
+}
+
+/* Resultados */
+.ficha-tecnica__resultados {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ficha-tecnica__metricas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+}
+
+.ficha-tecnica__metrica {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-5);
+    text-align: center;
+}
+
+.ficha-tecnica__metrica-valor {
+    display: block;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-700);
+    margin-bottom: var(--spacing-1);
+}
+
+.ficha-tecnica__metrica-indicador {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-1);
+}
+
+.ficha-tecnica__metrica-periodo {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+}
+
+.ficha-tecnica__trabajos h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__trabajos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.ficha-tecnica__trabajos li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-3);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+}
+
+.ficha-tecnica__trabajos li svg {
+    color: var(--color-success);
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Avales */
+.ficha-tecnica__avales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+}
+
+.ficha-tecnica__aval {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-5);
+    background-color: var(--color-gray-50);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+}
+
+.ficha-tecnica__aval svg {
+    color: var(--color-primary-500);
+    flex-shrink: 0;
+}
+
+.ficha-tecnica__aval-org {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+}
+
+.ficha-tecnica__aval-tipo {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+}
+
+/* Potencial de Alianza */
+.ficha-tecnica__alianza {
+    background-color: var(--color-primary-900);
+}
+
+.ficha-tecnica__alianza-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ficha-tecnica__alianza-desc {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-300);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-8);
+    text-align: center;
+}
+
+.ficha-tecnica__alianza-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-8);
+}
+
+.ficha-tecnica__alianza-col h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-4);
+}
+
+.ficha-tecnica__alianza-col h4 svg {
+    color: var(--color-primary-400);
+}
+
+.ficha-tecnica__alianza-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.ficha-tecnica__alianza-col li {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-300);
+    padding-left: var(--spacing-4);
+    position: relative;
+}
+
+.ficha-tecnica__alianza-col li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-400);
+}
+
+.ficha-tecnica__alianza-cta {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+.ficha-tecnica__alianza-cta .btn--secondary {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.ficha-tecnica__alianza-cta .btn--secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary-900);
+}
+
+.ficha-tecnica__alianza-cta .btn--ghost {
+    color: var(--color-gray-400);
+}
+
+.ficha-tecnica__alianza-cta .btn--ghost:hover {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Nota Técnica */
+.ficha-tecnica__nota {
+    padding: var(--spacing-8) 0;
+    background-color: var(--color-gray-50);
+    border-top: var(--border-width) solid var(--color-gray-100);
+}
+
+.ficha-tecnica__nota-content {
+    display: flex;
+    gap: var(--spacing-4);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ficha-tecnica__nota-content svg {
+    color: var(--color-gray-400);
+    flex-shrink: 0;
+}
+
+.ficha-tecnica__nota-content h4 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-2);
+}
+
+.ficha-tecnica__nota-content p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .ficha-tecnica__tipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ficha-tecnica__modulos,
+    .ficha-tecnica__competencias,
+    .ficha-tecnica__alcance,
+    .ficha-tecnica__recursos,
+    .ficha-tecnica__avales,
+    .ficha-tecnica__alianza-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ficha-tecnica__metricas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ficha-tecnica__tipo-grid,
+    .ficha-tecnica__metricas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ficha-tecnica__meta {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+
+    .ficha-tecnica__alianza-cta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ficha-tecnica__nota-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
