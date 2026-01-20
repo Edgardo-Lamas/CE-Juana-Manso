@@ -1,0 +1,433 @@
+/* ==========================================================================
+   HOME PAGE - Sitio Institucional
+   ========================================================================== */
+
+/* ===== HERO INSTITUCIONAL ===== */
+.home__hero {
+    position: relative;
+    padding: var(--spacing-24) 0 var(--spacing-20);
+    background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-800) 100%);
+    overflow: hidden;
+}
+
+.home__hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.home__hero-content {
+    position: relative;
+    max-width: 800px;
+}
+
+.home__hero-badge {
+    display: inline-block;
+    padding: var(--spacing-2) var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--color-primary-300);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius-sm);
+}
+
+.home__hero-title {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-6);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.home__hero-subtitle {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray-300);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-8);
+    max-width: 640px;
+}
+
+.home__hero-actions {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+}
+
+.home__hero-actions .btn--primary {
+    background-color: var(--color-white);
+    color: var(--color-primary-900);
+}
+
+.home__hero-actions .btn--primary:hover {
+    background-color: var(--color-gray-100);
+}
+
+.home__hero-actions .btn--secondary {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-white);
+}
+
+.home__hero-actions .btn--secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+}
+
+.home__hero-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--color-primary-500) 20%,
+            var(--color-primary-400) 50%,
+            var(--color-primary-500) 80%,
+            transparent 100%);
+}
+
+/* ===== DECLARACIÓN INSTITUCIONAL ===== */
+.home__declaracion {
+    padding: var(--spacing-12) 0;
+    background-color: var(--color-white);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.home__declaracion-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__declaracion-texto {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-4);
+}
+
+.home__declaracion-enfasis {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-700);
+    margin-bottom: 0;
+    padding-top: var(--spacing-4);
+    border-top: var(--border-width) solid var(--color-gray-100);
+    display: inline-block;
+}
+
+/* ===== PILARES INSTITUCIONALES ===== */
+.home__pilares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.home__pilar {
+    text-align: center;
+    padding: var(--spacing-8) var(--spacing-6);
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+    border: var(--border-width) solid transparent;
+    transition: all var(--transition-base);
+}
+
+.home__pilar:hover {
+    background-color: var(--color-white);
+    border-color: var(--color-gray-200);
+    box-shadow: var(--shadow-md);
+}
+
+.home__pilar-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-primary-100);
+    border-radius: var(--border-radius-lg);
+    color: var(--color-primary-700);
+    margin-bottom: var(--spacing-4);
+}
+
+.home__pilar-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-3);
+}
+
+.home__pilar-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 0;
+}
+
+/* ===== UNIDADES DE EJECUCIÓN TÉCNICA ===== */
+.home__unidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+.home__unidad {
+    display: flex;
+    gap: var(--spacing-4);
+    padding: var(--spacing-6);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    transition: all var(--transition-base);
+}
+
+.home__unidad:hover {
+    border-color: var(--color-primary-200);
+    box-shadow: var(--shadow-sm);
+}
+
+.home__unidad-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-md);
+    color: var(--color-primary-700);
+    flex-shrink: 0;
+}
+
+.home__unidad-nombre {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-1);
+}
+
+.home__unidad-capacidad {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+.home__unidades-cta {
+    text-align: center;
+}
+
+/* ===== MÉTRICAS DASHBOARD ===== */
+.home__dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+.home__metrica {
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    text-align: center;
+    border: var(--border-width) solid var(--color-gray-100);
+}
+
+.home__metrica-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-primary-100);
+    border-radius: var(--border-radius-md);
+    color: var(--color-primary-700);
+    margin-bottom: var(--spacing-4);
+}
+
+.home__metrica-valor {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-800);
+    line-height: 1;
+    margin-bottom: var(--spacing-2);
+}
+
+.home__metrica-etiqueta {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-1);
+}
+
+.home__metrica-desc {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+}
+
+.home__dashboard-cta {
+    text-align: center;
+}
+
+/* ===== VALIDACIÓN Y ALIANZAS ===== */
+.home__alianzas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+}
+
+.home__alianza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-5) var(--spacing-4);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+    min-height: 80px;
+}
+
+.home__alianza span {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+}
+
+.home__validacion-nota {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    margin-bottom: 0;
+}
+
+/* ===== CIERRE INSTITUCIONAL ===== */
+.home__cierre {
+    background-color: var(--color-white);
+    border-top: var(--border-width) solid var(--color-gray-100);
+}
+
+.home__cierre-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home__cierre-content h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-4);
+}
+
+.home__cierre-content>p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-8);
+}
+
+.home__cierre-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+}
+
+.home__cierre-actions .btn--ghost {
+    color: var(--color-gray-600);
+}
+
+.home__cierre-actions .btn--ghost:hover {
+    color: var(--color-gray-900);
+    background-color: var(--color-gray-100);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .home__pilares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__unidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__alianzas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .home__hero {
+        padding: var(--spacing-16) 0 var(--spacing-12);
+    }
+
+    .home__hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .home__hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .home__hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home__hero-actions .btn {
+        justify-content: center;
+    }
+
+    .home__declaracion-texto {
+        font-size: var(--font-size-base);
+    }
+
+    .home__pilares,
+    .home__unidades-grid,
+    .home__dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .home__alianzas {
+        grid-template-columns: 1fr;
+    }
+
+    .home__unidad {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home__unidad-icon {
+        margin: 0 auto;
+    }
+
+    .home__cierre-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home__cierre-actions .btn {
+        justify-content: center;
+    }
+}

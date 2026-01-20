@@ -1,0 +1,237 @@
+/* Quiénes Somos Page Styles */
+
+/* Presentación */
+.quienes-somos__presentacion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-12);
+    align-items: start;
+}
+
+.quienes-somos__texto {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-700);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-4);
+}
+
+.quienes-somos__texto:last-of-type {
+    margin-bottom: 0;
+}
+
+.quienes-somos__dependencia {
+    background-color: var(--color-gray-50);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-left: 4px solid var(--color-primary-700);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-md);
+}
+
+.quienes-somos__dependencia h4 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-3);
+}
+
+.quienes-somos__dependencia p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+/* Referencia Juana Manso */
+.quienes-somos__referencia {
+    display: flex;
+    gap: var(--spacing-8);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quienes-somos__referencia-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-lg);
+    color: var(--color-primary-700);
+    flex-shrink: 0;
+}
+
+.quienes-somos__referencia-content h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-1);
+}
+
+.quienes-somos__referencia-sub {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary-600);
+    margin-bottom: var(--spacing-4);
+}
+
+.quienes-somos__referencia-content>p:last-of-type {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-4);
+}
+
+.quienes-somos__referencia-valores {
+    display: flex;
+    gap: var(--spacing-6);
+    padding-top: var(--spacing-4);
+    border-top: var(--border-width) solid var(--color-gray-100);
+}
+
+.quienes-somos__valor {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+}
+
+.quienes-somos__valor svg {
+    color: var(--color-primary-500);
+}
+
+/* Estructura */
+.quienes-somos__estructura {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.quienes-somos__estructura-item {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    text-align: center;
+}
+
+.quienes-somos__estructura-item h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.quienes-somos__estructura-item p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+/* Principios */
+.quienes-somos__principios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.quienes-somos__principio {
+    text-align: center;
+    padding: var(--spacing-6);
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+}
+
+.quienes-somos__principio-number {
+    display: block;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-200);
+    margin-bottom: var(--spacing-2);
+}
+
+.quienes-somos__principio-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.quienes-somos__principio-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+/* Alianzas */
+.quienes-somos__alianzas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-4);
+}
+
+.quienes-somos__alianza-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-6);
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+}
+
+.quienes-somos__alianza-item span {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .quienes-somos__presentacion {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+
+    .quienes-somos__estructura,
+    .quienes-somos__principios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quienes-somos__alianzas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quienes-somos__referencia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quienes-somos__referencia-icon {
+        margin: 0 auto;
+    }
+
+    .quienes-somos__referencia-valores {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .quienes-somos__estructura,
+    .quienes-somos__principios {
+        grid-template-columns: 1fr;
+    }
+
+    .quienes-somos__alianzas {
+        grid-template-columns: 1fr;
+    }
+}

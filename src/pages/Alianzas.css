@@ -1,0 +1,303 @@
+/* Alianzas Page Styles */
+
+/* Tipos de alianzas */
+.alianzas__tipos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+}
+
+.alianzas__tipo {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    transition: border-color var(--transition-fast);
+}
+
+.alianzas__tipo:hover {
+    border-color: var(--color-gray-300);
+}
+
+.alianzas__tipo-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+}
+
+.alianzas__tipo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-md);
+    color: var(--color-primary-700);
+}
+
+.alianzas__tipo-header h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.alianzas__tipo-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-4);
+}
+
+.alianzas__tipo-ejemplos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+}
+
+.alianzas__tipo-tag {
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-600);
+    background-color: var(--color-gray-100);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Convenios Tabla */
+.alianzas__convenios-tabla {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.alianzas__convenios-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.alianzas__convenios-tabla th,
+.alianzas__convenios-tabla td {
+    padding: var(--spacing-4);
+    text-align: left;
+}
+
+.alianzas__convenios-tabla th {
+    background-color: var(--color-gray-50);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-700);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    border-bottom: var(--border-width) solid var(--color-gray-200);
+}
+
+.alianzas__convenios-tabla td {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.alianzas__convenios-tabla tr:last-child td {
+    border-bottom: none;
+}
+
+.alianzas__convenio-inst {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-900);
+}
+
+.alianzas__estado {
+    display: inline-block;
+    padding: 2px var(--spacing-2);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-sm);
+}
+
+.alianzas__estado--vigente {
+    color: var(--color-success);
+    background-color: rgba(5, 150, 105, 0.1);
+}
+
+/* Áreas */
+.alianzas__areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+}
+
+.alianzas__area {
+    background-color: var(--color-gray-50);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.alianzas__area h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.alianzas__area>p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-4);
+    line-height: var(--line-height-relaxed);
+}
+
+.alianzas__area-req h4 {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-2);
+}
+
+.alianzas__area-req ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.alianzas__area-req li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+}
+
+.alianzas__area-req li svg {
+    color: var(--color-primary-500);
+}
+
+/* CTA Section */
+.alianzas__cta {
+    background-color: var(--color-primary-900);
+    text-align: center;
+}
+
+.alianzas__cta-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.alianzas__cta-content svg {
+    color: var(--color-primary-400);
+    margin-bottom: var(--spacing-6);
+}
+
+.alianzas__cta-content h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-4);
+}
+
+.alianzas__cta-content p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-300);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-3);
+}
+
+.alianzas__cta-sub {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-400);
+}
+
+.alianzas__cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-8);
+}
+
+.alianzas__cta-btn {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.alianzas__cta-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary-900);
+}
+
+.alianzas__cta-btn-alt {
+    color: var(--color-gray-300);
+}
+
+.alianzas__cta-btn-alt:hover {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Proceso */
+.alianzas__proceso {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.alianzas__paso {
+    display: flex;
+    gap: var(--spacing-6);
+    padding: var(--spacing-6) 0;
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.alianzas__paso:last-child {
+    border-bottom: none;
+}
+
+.alianzas__paso-num {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-200);
+    flex-shrink: 0;
+    width: 48px;
+}
+
+.alianzas__paso h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-1);
+}
+
+.alianzas__paso p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+
+    .alianzas__tipos,
+    .alianzas__areas {
+        grid-template-columns: 1fr;
+    }
+
+    .alianzas__convenios-tabla {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .alianzas__cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .alianzas__paso {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+}

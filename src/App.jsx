@@ -1,0 +1,35 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import QuienesSomos from './pages/QuienesSomos';
+import UnidadesTecnicas from './pages/UnidadesTecnicas';
+import AreaAcademica from './pages/AreaAcademica';
+import Proyectos from './pages/Proyectos';
+import Impacto from './pages/Impacto';
+import Alianzas from './pages/Alianzas';
+import Contacto from './pages/Contacto';
+import './index.css';
+
+function App() {
+  return (
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quienes-somos" element={<QuienesSomos />} />
+          <Route path="/unidades-tecnicas" element={<UnidadesTecnicas />} />
+          <Route path="/area-academica" element={<AreaAcademica />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/impacto" element={<Impacto />} />
+          <Route path="/alianzas" element={<Alianzas />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;

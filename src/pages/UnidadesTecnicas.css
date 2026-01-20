@@ -1,0 +1,194 @@
+/* Unidades Técnicas Page Styles */
+
+/* Clasificación */
+.unidades__clasificacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+}
+
+.unidades__clasificacion-item {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    text-align: center;
+}
+
+.unidades__clasificacion-tipo {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-3);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-3);
+}
+
+.unidades__clasificacion-item h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.unidades__clasificacion-item p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: 0;
+}
+
+/* Lista de Unidades */
+.unidades__lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.unidades__item {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-8);
+    transition: border-color var(--transition-base);
+}
+
+.unidades__item:hover {
+    border-color: var(--color-gray-300);
+}
+
+.unidades__item-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-4);
+}
+
+.unidades__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-lg);
+    color: var(--color-primary-700);
+    flex-shrink: 0;
+}
+
+.unidades__item-clasificacion {
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary-700);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-1);
+}
+
+.unidades__item-nombre {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.unidades__item-descripcion {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-6);
+    padding-bottom: var(--spacing-6);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.unidades__item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+}
+
+.unidades__item-col h4 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-3);
+    padding-bottom: var(--spacing-2);
+    border-bottom: 2px solid var(--color-primary-100);
+}
+
+.unidades__item-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.unidades__item-col li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+}
+
+.unidades__item-col li svg {
+    color: var(--color-primary-500);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Nota Técnica */
+.unidades__nota {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-left: 4px solid var(--color-primary-700);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-md);
+}
+
+.unidades__nota h3 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-3);
+}
+
+.unidades__nota p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-3);
+}
+
+.unidades__nota p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .unidades__clasificacion {
+        grid-template-columns: 1fr;
+    }
+
+    .unidades__item-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-6);
+    }
+}
+
+@media (max-width: 768px) {
+    .unidades__item {
+        padding: var(--spacing-6);
+    }
+
+    .unidades__item-header {
+        flex-direction: column;
+        gap: var(--spacing-3);
+    }
+}

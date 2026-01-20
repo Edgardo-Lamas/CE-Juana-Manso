@@ -1,0 +1,90 @@
+.section-header {
+    margin-bottom: var(--spacing-10);
+}
+
+.section-header--center {
+    text-align: center;
+}
+
+/* Badge */
+.section-header__badge {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-50);
+    border-radius: var(--border-radius-sm);
+}
+
+.section-header--dark .section-header__badge {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-primary-400);
+}
+
+/* Title */
+.section-header__title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin-bottom: 0;
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.section-header--dark .section-header__title {
+    color: var(--color-white);
+}
+
+/* Line */
+.section-header__line {
+    width: 48px;
+    height: 3px;
+    background-color: var(--color-primary-700);
+    margin: var(--spacing-4) 0 var(--spacing-4);
+}
+
+.section-header--center .section-header__line {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header--dark .section-header__line {
+    background-color: var(--color-primary-500);
+}
+
+/* Subtitle */
+.section-header__subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-gray-500);
+    max-width: 640px;
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+}
+
+.section-header--center .section-header__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header--dark .section-header__subtitle {
+    color: var(--color-gray-400);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .section-header__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .section-header__subtitle {
+        font-size: var(--font-size-base);
+    }
+}
