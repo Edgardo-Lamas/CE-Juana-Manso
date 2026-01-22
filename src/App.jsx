@@ -15,7 +15,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CE-Juana-Manso">
       <div className="app">
         <Header />
         <Routes>
