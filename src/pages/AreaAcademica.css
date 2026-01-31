@@ -162,6 +162,83 @@
     color: var(--color-primary-500);
 }
 
+/* Cursos de Formación */
+.academica__cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+}
+
+.academica__curso {
+    background-color: var(--color-white);
+    border: var(--border-width) solid var(--color-gray-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+}
+
+.academica__curso-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-4);
+}
+
+.academica__curso-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-primary-100);
+    border-radius: var(--border-radius-md);
+    color: var(--color-primary-700);
+    flex-shrink: 0;
+}
+
+.academica__curso-nombre {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-900);
+    margin: 0;
+}
+
+.academica__curso-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-4);
+    padding-bottom: var(--spacing-4);
+    border-bottom: var(--border-width) solid var(--color-gray-100);
+}
+
+.academica__curso-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.academica__curso-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-2);
+}
+
+.academica__curso-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    flex-shrink: 0;
+}
+
+.academica__curso-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    text-align: right;
+}
+
 /* Talleres Table */
 .academica__talleres {
     max-width: 800px;
@@ -252,7 +329,8 @@
 @media (max-width: 768px) {
 
     .academica__estructura,
-    .academica__programas {
+    .academica__programas,
+    .academica__cursos {
         grid-template-columns: 1fr;
     }
 

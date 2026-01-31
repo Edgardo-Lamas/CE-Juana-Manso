@@ -8,7 +8,11 @@ import {
     Ruler,
     CheckCircle2,
     ArrowRight,
-    Thermometer
+    Thermometer,
+    Sun,
+    Wind,
+    Scissors,
+    Flame
 } from 'lucide-react';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
@@ -199,6 +203,108 @@ const unidades = [
             'Herrero de obra',
             'Operador de amoladora'
         ]
+    },
+    {
+        id: 'paneles-solares',
+        icon: Sun,
+        nombre: 'Instalación y Mantenimiento de Paneles Solares',
+        clasificacion: 'Capacitación Técnica',
+        descripcion: 'Capacitación en tareas de instalación, mantenimiento y resolución de problemas habituales en sistemas de paneles solares. Incluye electricidad básica, termos solares y conceptos de energía eólica.',
+        capacidades: [
+            'Instalación de paneles solares',
+            'Mantenimiento preventivo y correctivo',
+            'Diagnóstico de problemas habituales',
+            'Electricidad básica aplicada',
+            'Termos solares'
+        ],
+        equipamiento: [
+            'Paneles solares de práctica',
+            'Instrumental de medición',
+            'Herramientas eléctricas',
+            'Material didáctico',
+            'Elementos de seguridad'
+        ],
+        certificaciones: [
+            'Instalador de paneles solares',
+            'Mantenimiento de sistemas fotovoltaicos'
+        ],
+        capacitador: 'Pedro Moix'
+    },
+    {
+        id: 'energias-renovables',
+        icon: Wind,
+        nombre: 'Energías Renovables',
+        clasificacion: 'Capacitación Técnica',
+        descripcion: 'Optimización de recursos naturales para incorporarlos a la vida cotidiana. Formación integral en paneles solares (electricidad), termos solares (energía calorífica) y energía eólica.',
+        capacidades: [
+            'Paneles solares fotovoltaicos',
+            'Termos solares para agua caliente',
+            'Conceptos de energía eólica',
+            'Optimización de recursos naturales',
+            'Aplicaciones domésticas y comerciales'
+        ],
+        equipamiento: [
+            'Paneles solares',
+            'Termos solares',
+            'Material didáctico especializado',
+            'Instrumental de medición',
+            'Maquetas demostrativas'
+        ],
+        certificaciones: [
+            'Técnico en energías renovables'
+        ],
+        capacitador: 'Pedro Moix'
+    },
+    {
+        id: 'peluqueria',
+        icon: Scissors,
+        nombre: 'Peluquería y Barbería',
+        clasificacion: 'Capacitación Técnica',
+        descripcion: 'Capacitación técnica en peluquería y barbería como salida laboral para el egreso al medio libre. Formación práctica con técnicas actuales del oficio.',
+        capacidades: [
+            'Cortes de cabello masculinos',
+            'Técnicas de barbería',
+            'Estilismo básico',
+            'Atención al cliente',
+            'Higiene y esterilización'
+        ],
+        equipamiento: [
+            'Tijeras profesionales',
+            'Máquinas de corte',
+            'Navajas y afeitadoras',
+            'Sillones de barbería',
+            'Productos de cuidado capilar'
+        ],
+        certificaciones: [
+            'Barbero profesional',
+            'Peluquero estilista'
+        ]
+    },
+    {
+        id: 'prevencion-incendios',
+        icon: Flame,
+        nombre: 'Prevención de Incendios y Plan de Evacuación',
+        clasificacion: 'Capacitación en Seguridad',
+        descripcion: 'Formación en prevención de incendios, planes de evacuación y procedimientos de emergencia. Capacitación dictada por personal de Bomberos del SPB.',
+        capacidades: [
+            'Prevención de incendios',
+            'Planes de evacuación',
+            'Procedimientos según situación',
+            'Identificación de salidas de emergencia',
+            'Uso de extintores (clases A, B, C, D, E y K)'
+        ],
+        equipamiento: [
+            'Extintores de práctica',
+            'Sábana y máscara ignífuga',
+            'Material didáctico',
+            'Señalética de emergencia',
+            'Detectores de humo'
+        ],
+        certificaciones: [
+            'Prevención de incendios',
+            'Evacuación y emergencias'
+        ],
+        dictadoPor: 'Personal de Bomberos - Unidad N°9 SPB'
     },
 ];
 

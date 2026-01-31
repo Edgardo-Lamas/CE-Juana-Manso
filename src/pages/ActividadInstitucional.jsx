@@ -25,67 +25,115 @@ const tiposActividad = {
 // Registros de actividades institucionales
 const actividades = [
     {
-        id: 'act-2024-001',
-        titulo: 'Jornada de formación jurídica con magistrados del fuero penal',
-        tipo: 'jornada-juridica',
-        fecha: '15 de noviembre de 2024',
-        marcoInstitucional: 'Programa de Educación Jurídica en Contexto de Encierro',
-        descripcion: 'Desarrollo de jornada formativa sobre derechos y garantías constitucionales. Participación de magistrados del fuero penal y referentes del área académica institucional. Actividad enmarcada en el programa de formación ciudadana.',
-        participantes: [
-            { nombre: 'Dr. [Nombre]', cargo: 'Juez de Ejecución Penal', organismo: 'Poder Judicial de la Nación' },
-            { nombre: 'Lic. [Nombre]', cargo: 'Coordinadora Académica', organismo: 'Comunidad Educativa Juana Manso' },
-        ],
-        imagenes: [] // Sin imágenes por ahora
-    },
-    {
-        id: 'act-2024-002',
-        titulo: 'Visita institucional de autoridades del Ministerio de Educación',
-        tipo: 'visita-institucional',
-        fecha: '28 de octubre de 2024',
-        marcoInstitucional: 'Supervisión de Programas Educativos en Contexto de Encierro',
-        descripcion: 'Recorrido por instalaciones educativas y talleres técnicos. Presentación de resultados del período académico y verificación de condiciones operativas de las unidades de formación.',
-        participantes: [
-            { nombre: '[Funcionario]', cargo: 'Director de Educación en Contextos de Encierro', organismo: 'Ministerio de Educación' },
-            { nombre: '[Funcionario]', cargo: 'Supervisora Técnica', organismo: 'Ministerio de Educación' },
-        ],
-        imagenes: []
-    },
-    {
-        id: 'act-2024-003',
-        titulo: 'Entrega de certificaciones de competencias laborales',
+        id: 'act-2026-001',
+        titulo: 'Programa de Primeros Socorros y RCP Básico en Zonas Urbanas',
         tipo: 'certificaciones',
-        fecha: '10 de octubre de 2024',
-        marcoInstitucional: 'Programa de Certificación de Competencias - Ministerio de Trabajo',
-        descripcion: 'Acto formal de entrega de certificaciones de competencias laborales en oficios técnicos. Participación de autoridades del Ministerio de Trabajo y representantes del sector productivo.',
+        fecha: 'Enero de 2026',
+        marcoInstitucional: 'Capacitación extensiva en colaboración con Dirección de Salud Penitenciaria',
+        descripcion: 'Primera capacitación del año en modalidad extensiva. Formación desarrollada cada viernes de enero de 2026, marcando un excelente inicio de ciclo. Agradecimiento especial a los profesores Santiago y Rodrigo de la Dirección de Salud Penitenciaria.',
         participantes: [
-            { nombre: '[Funcionario]', cargo: 'Representante', organismo: 'Ministerio de Trabajo' },
-            { nombre: '[Representante]', cargo: 'Delegado Regional', organismo: 'Cámara de la Construcción' },
+            { nombre: 'Profesor Santiago', cargo: 'Capacitador', organismo: 'Dirección de Salud Penitenciaria' },
+            { nombre: 'Profesor Rodrigo', cargo: 'Capacitador', organismo: 'Dirección de Salud Penitenciaria' },
         ],
         imagenes: []
     },
     {
-        id: 'act-2024-004',
-        titulo: 'Conferencia sobre reinserción laboral y formación técnica',
-        tipo: 'conferencia',
-        fecha: '22 de septiembre de 2024',
-        marcoInstitucional: 'Ciclo de Conferencias Institucionales',
-        descripcion: 'Exposición de especialistas sobre políticas de reinserción laboral y el rol de la formación técnica. Actividad abierta a referentes de organismos públicos y privados vinculados al área.',
+        id: 'act-2025-002',
+        titulo: 'Charla de Prevención de Incendios y Plan de Evacuación',
+        tipo: 'jornada-academica',
+        fecha: '10 de diciembre de 2025',
+        marcoInstitucional: 'Capacitación en Seguridad Institucional',
+        descripcion: 'Personal de Bomberos de la Unidad N°9 del SPB brindó charla instructiva sobre prevención de incendios, plan de evacuación, salidas de emergencia, uso de extintores (clases A,B,C,D,E y K), conexiones eléctricas y recomendaciones de seguridad.',
         participantes: [
-            { nombre: 'Dr. [Nombre]', cargo: 'Especialista en Políticas de Empleo', organismo: 'Universidad Nacional' },
-            { nombre: 'Lic. [Nombre]', cargo: 'Coordinador de Programas', organismo: 'ONG [Nombre]' },
+            { nombre: 'Personal de Bomberos', cargo: 'Instructores', organismo: 'Unidad N°9 SPB' },
         ],
         imagenes: []
     },
     {
-        id: 'act-2024-005',
-        titulo: 'Firma de convenio de cooperación con Universidad Tecnológica Nacional',
+        id: 'act-2025-003',
+        titulo: 'Charla de Toma de Conciencia y Prevención del Suicidio',
+        tipo: 'jornada-academica',
+        fecha: '19 de noviembre de 2025',
+        marcoInstitucional: 'Programa de Salud Mental y Bienestar',
+        descripcion: 'En conmemoración del 143° aniversario de la fundación de La Plata, se brindó charla por parte del personal de Salud Penitenciaria sobre toma de conciencia y prevención del suicidio, proporcionando herramientas para atravesar la situación de encierro.',
+        participantes: [
+            { nombre: 'Personal de Salud Penitenciaria', cargo: 'Profesionales', organismo: 'SPB' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-004',
+        titulo: 'Curso: De la Condena a la Responsabilidad Subjetiva',
+        tipo: 'jornada-juridica',
+        fecha: '3 de noviembre de 2025',
+        marcoInstitucional: 'Programa de Educación Jurídica en Contexto de Encierro',
+        descripcion: 'Inicio del curso titulado "De la condena a la responsabilidad subjetiva". Propuesta educativa no formal dirigida a personas privadas de libertad con el objetivo de generar un espacio de reflexión profunda sobre la responsabilidad de los individuos en relación a sus acciones.',
+        participantes: [
+            { nombre: 'Equipo Académico', cargo: 'Capacitadores', organismo: 'Comunidad Educativa Juana Manso' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-005',
+        titulo: 'Donaciones que Hacen Crecer a la Comunidad Educativa',
         tipo: 'cooperacion',
-        fecha: '5 de agosto de 2024',
-        marcoInstitucional: 'Programa de Articulación con Educación Superior',
-        descripcion: 'Formalización de convenio marco para extensión de programas de formación técnica superior. Acuerdo que habilita trayectos formativos con certificación universitaria.',
+        fecha: '2025',
+        marcoInstitucional: 'Gestión de Recursos y Alianzas',
+        descripcion: 'Recepción de donaciones que fortalecen las herramientas didácticas: pantalla con trípode para proyector donada por Pablo Roldán, e impresora láser Xerox donada por Matías Silva. Estos aportes mejoran significativamente la experiencia de aprendizaje.',
         participantes: [
-            { nombre: '[Autoridad]', cargo: 'Decano', organismo: 'UTN - Facultad Regional' },
-            { nombre: '[Autoridad]', cargo: 'Director Institucional', organismo: 'Comunidad Educativa Juana Manso' },
+            { nombre: 'Pablo Roldán', cargo: 'Donante', organismo: 'Colaborador externo' },
+            { nombre: 'Matías Silva', cargo: 'Donante', organismo: 'Colaborador externo' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-006',
+        titulo: 'Entrega de Certificados a Promotores de Salud',
+        tipo: 'certificaciones',
+        fecha: '8 de agosto de 2025',
+        marcoInstitucional: 'Programa de Promotores de Salud',
+        descripcion: 'Acto de entrega de certificados a participantes del segundo curso de "Promotores de Salud". Ceremonia realizada en el SUM del Pabellón 16 B.',
+        participantes: [
+            { nombre: 'Coordinación Académica', cargo: 'Organizadores', organismo: 'Comunidad Educativa Juana Manso' },
+            { nombre: 'Personal de Salud Penitenciaria', cargo: 'Docentes', organismo: 'SPB' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-007',
+        titulo: 'Primer Aniversario de la Comunidad Educativa Juana Manso',
+        tipo: 'jornada-academica',
+        fecha: '11 de julio de 2025',
+        marcoInstitucional: 'Celebración Institucional',
+        descripcion: 'Se cumple el primer aniversario de la Comunidad Educativa "Juana Manso". Lo que comenzó como una idea presentada a las autoridades de la Unidad 9 de La Plata se convirtió en un espacio de autogestión de cursos y talleres. Coincidiendo con el cierre del primer cuatrimestre, se realizó entrega de certificados.',
+        participantes: [
+            { nombre: 'Guillermo González', cargo: 'Coordinador', organismo: 'Comunidad Educativa Juana Manso' },
+            { nombre: 'Luis Díaz Zapata', cargo: 'Coordinador', organismo: 'Comunidad Educativa Juana Manso' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-008',
+        titulo: 'Reunión con Ministerio de Justicia - Proyecto Melodías para la Transformación',
+        tipo: 'visita-institucional',
+        fecha: '26 de junio de 2025',
+        marcoInstitucional: 'Gestión de Proyectos Culturales',
+        descripcion: 'Reunión con representantes del Ministerio de Justicia para presentar el Proyecto "Melodías para la Transformación". Se obtuvo apoyo institucional y compromiso para evaluar donación de instrumentos. Los representantes presenciaron ensayo de rock y cumbia.',
+        participantes: [
+            { nombre: 'Representantes', cargo: 'Funcionarios', organismo: 'Ministerio de Justicia' },
+        ],
+        imagenes: []
+    },
+    {
+        id: 'act-2025-009',
+        titulo: 'Donación de Libros al Pabellón Literario',
+        tipo: 'cooperacion',
+        fecha: '2025',
+        marcoInstitucional: 'Fomento de la Educación y la Cultura',
+        descripcion: 'Donación de libros y material de estudio del Pabellón N°16 B hacia el Pabellón "Literario" N°18, fortaleciendo las actividades educativas y culturales como marco principal para la resocialización.',
+        participantes: [
+            { nombre: 'Pabellón 16 B', cargo: 'Donante', organismo: 'Comunidad Educativa Juana Manso' },
+            { nombre: 'Pabellón 18 "Literario"', cargo: 'Beneficiario', organismo: 'Unidad 9' },
         ],
         imagenes: []
     },
