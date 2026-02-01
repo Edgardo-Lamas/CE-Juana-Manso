@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
+import PhotoGallery from '../components/PhotoGallery';
 import './ActividadInstitucional.css';
 
 // Tipos de actividad con iconos
@@ -215,11 +216,10 @@ function ActividadInstitucional() {
                                     </div>
 
                                     {actividad.imagenes && actividad.imagenes.length > 0 && (
-                                        <div className="actividad__registro-galeria">
-                                            {actividad.imagenes.map((img, i) => (
-                                                <img key={i} src={img} alt={`Registro visual ${i + 1}`} />
-                                            ))}
-                                        </div>
+                                        <PhotoGallery
+                                            images={actividad.imagenes}
+                                            title={actividad.titulo}
+                                        />
                                     )}
                                 </article>
                             );

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
+import PhotoGallery from '../components/PhotoGallery';
 import './UnidadesTecnicas.css';
 
 // Unidades de ejecución técnica
@@ -44,6 +45,12 @@ const unidades = [
             'Técnico en calefacción',
             'Gasista matriculado',
             'Mantenimiento de calderas'
+        ],
+        imagenes: [
+            '/CE-Juana-Manso/img/sistemas-calefaccion/caldera.jpg',
+            '/CE-Juana-Manso/img/sistemas-calefaccion/instalacion.jpg',
+            '/CE-Juana-Manso/img/sistemas-calefaccion/plano.jpg',
+            '/CE-Juana-Manso/img/sistemas-calefaccion/proyectando.jpg'
         ],
         fichaUrl: '/unidades-tecnicas/termomecanica'
     },
@@ -410,6 +417,14 @@ function UnidadesTecnicas() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                {/* Galería de imágenes */}
+                                {unidad.imagenes && unidad.imagenes.length > 0 && (
+                                    <PhotoGallery
+                                        images={unidad.imagenes}
+                                        title={unidad.nombre}
+                                    />
+                                )}
 
                                 {/* Botón de ficha técnica */}
                                 <div className="unidades__item-footer">
